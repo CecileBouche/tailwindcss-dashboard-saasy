@@ -21,9 +21,11 @@
     <title>Saasy</title>
   </head>
   <body class="min-h-screen bg-linear-to-r from-sky-700 to-purple-700 p-6">
-    <div class="container mx-auto min-h-screen rounded-2xl bg-white">
+    <div
+      class="container mx-auto min-h-screen rounded-2xl bg-white font-bold text-slate-600"
+    >
       <header
-        class="grid grid-cols-3 items-center border-b border-slate-200 px-12 py-6"
+        class="grid grid-cols-3 items-center border-b border-slate-200 px-12 py-3"
       >
         <img src="./assets/images/logo.png" alt="Logo" class="w-10" />
         <ul class="flex items-center justify-center gap-x-6">
@@ -45,6 +47,145 @@
           </li>
         </ul>
       </header>
+      <div
+        class="flex items-center justify-between border-b border-slate-200 px-12 py-6"
+      >
+        <ul class="flex">
+          <li class="border-r border-slate-200 pr-3 text-slate-950">
+            Cashflow
+          </li>
+          <a href="#" class="px-3 text-sky-500 hover:text-sky-500"
+            >Last 7 days</a
+          >
+          <a href="#" class="px- hover:text-sky-500">Last 30 days</a>
+          <a href="#" class="px-3 hover:text-sky-500">All-time</a>
+        </ul>
+        <button
+          class="rounded-lg bg-sky-500 px-4 py-1 text-white hover:bg-sky-600 active:bg-sky-700"
+        >
+          + New invoice
+        </button>
+      </div>
+      <div
+        class="mb-12 grid grid-cols-4 divide-x divide-slate-200 border-b border-slate-200"
+      >
+        <div class="py-10">
+          <div class="mb-1 flex justify-between px-12 text-sm text-slate-400">
+            <p>Revenue</p>
+            <p>+4.70%</p>
+          </div>
+          <p class="px-12 text-2xl font-medium text-slate-800">$405,091.00</p>
+        </div>
+        <div class="py-10">
+          <div class="mb-1 flex justify-between px-12 text-sm text-slate-400">
+            <p>Overdue invoices</p>
+            <p class="text-red-700">+12.61%</p>
+          </div>
+          <p class="text-2x px-12 text-2xl font-medium text-slate-800">
+            $12,091.00
+          </p>
+        </div>
+        <div class="py-10">
+          <div class="mb-1 flex justify-between px-12 text-sm text-slate-400">
+            <p>Outstanding invoices</p>
+            <p>-3.25%</p>
+          </div>
+          <p class="px-12 text-2xl font-medium text-slate-800">$205,222.00</p>
+        </div>
+        <div class="py-10">
+          <div class="mb-1 flex justify-between px-12 text-sm text-slate-400">
+            <p>Expenses</p>
+            <p class="text-red-700">+5.75%</p>
+          </div>
+          <p class="px-12 text-2xl font-medium text-slate-800">$405,222.00</p>
+        </div>
+      </div>
+      <h4 class="border-b border-b-slate-50 px-12 py-6 text-sm">
+        Recent activity
+      </h4>
+      <div class="border-b border-b-slate-200 bg-slate-100 px-12 py-2">
+        Today
+      </div>
+      <ul class="px-12">
+        <li class="grid grid-cols-[50px_repeat(3,1fr)] py-4">
+          <span><i class="fa-solid fa-circle-up"></i></span>
+          <div>
+            <div class="flex">
+              <span class="text-medium mr-3">$7600.00</span>
+              <span
+                class="text-bold border border-green-100 bg-green-50 px-1 text-sm text-green-700"
+                >Paid</span
+              >
+            </div>
+            <span class="text-sm font-normal text-slate-400">500.00 tax</span>
+          </div>
+          <div>
+            <p class="bold text-sm">Reform</p>
+            <p class="pt-1 text-sm font-normal text-slate-400">
+              Website redesign
+            </p>
+          </div>
+          <div class="justify-self-end text-right">
+            <p class="bold text-sm text-sky-500">View transaction</p>
+            <p class="pt-1 text-sm font-normal text-slate-400">
+              Website invoice
+              <span class="text-black">#012541</span>
+            </p>
+          </div>
+        </li>
+        <li class="grid grid-cols-[50px_repeat(3,1fr)] py-4">
+          <span><i class="fa-solid fa-circle-up"></i></span>
+          <div>
+            <div class="flex">
+              <span class="text-medium mr-3">$7600.00</span>
+              <span
+                class="text-bold border border-red-100 bg-red-50 px-1 text-sm text-red-600"
+                >Overdue</span
+              >
+            </div>
+            <span class="text-sm font-normal text-slate-400">500.00 tax</span>
+          </div>
+          <div>
+            <p class="bold text-sm">Reform</p>
+            <p class="pt-1 text-sm font-normal text-slate-400">
+              Website redesign
+            </p>
+          </div>
+          <div class="justify-self-end text-right">
+            <p class="bold text-sm text-sky-500">View transaction</p>
+            <p class="pt-1 text-sm font-normal text-slate-400">
+              Website invoice
+              <span class="text-black">#012541</span>
+            </p>
+          </div>
+        </li>
+        <li class="grid grid-cols-[50px_repeat(3,1fr)] py-4">
+          <span><i class="fa-solid fa-circle-up"></i></span>
+          <div>
+            <div class="flex">
+              <span class="text-medium mr-3">$7600.00</span>
+              <span
+                class="text-bold border border-slate-100 bg-slate-50 px-1 text-sm text-slate-700"
+                >Withdraw</span
+              >
+            </div>
+            <span class="text-sm font-normal text-slate-400">500.00 tax</span>
+          </div>
+          <div>
+            <p class="bold text-sm">Reform</p>
+            <p class="pt-1 text-sm font-normal text-slate-400">
+              Website redesign
+            </p>
+          </div>
+          <div class="justify-self-end text-right">
+            <p class="bold text-sm text-sky-500">View transaction</p>
+            <p class="pt-1 text-sm font-normal text-slate-400">
+              Website invoice
+              <span class="text-black">#012541</span>
+            </p>
+          </div>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
